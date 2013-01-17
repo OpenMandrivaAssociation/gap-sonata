@@ -77,9 +77,11 @@ cp -a sonata $RPM_BUILD_ROOT%{_gap_dir}/pkg
 rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/sonata/README.sonata
 rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/sonata/doc/{make_doc,convert.pl}
 
-%post -p %{_bindir}/update-gap-workspace
+%post
+    %{_bindir}/update-gap-workspace
 
-%postun -p %{_bindir}/update-gap-workspace
+%postun
+    %{_bindir}/update-gap-workspace
 
 %files
 %doc README.sonata
