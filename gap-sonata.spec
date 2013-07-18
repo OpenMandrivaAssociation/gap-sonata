@@ -1,9 +1,7 @@
 Name:           gap-sonata
-Version:        2.5.1
+Version:        2.6
 Release:        1%{?dist}
 Summary:        GAP package for systems of nearrings
-
-Group:          Sciences/Mathematics
 License:        GPLv2
 URL:            http://www.algebra.uni-linz.ac.at/Sonata/
 Source0:        http://www.algebra.uni-linz.ac.at/Sonata/sonata-%{version}/sonata-%{version}.tar.gz
@@ -86,7 +84,3 @@ rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/sonata/doc/{make_doc,convert.pl}
 %files
 %doc README.sonata
 %{_gap_dir}/pkg/sonata/
-
-%changelog
-* Mon Sep 17 2012 Jerry James <loganjerry@gmail.com> - 2.5.1-1
-- Initial RPM
