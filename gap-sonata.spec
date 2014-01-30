@@ -1,7 +1,9 @@
 Name:           gap-sonata
 Version:        2.6
-Release:        1%{?dist}
+Release:        2.0%{?dist}
 Summary:        GAP package for systems of nearrings
+
+
 License:        GPLv2
 URL:            http://www.algebra.uni-linz.ac.at/Sonata/
 Source0:        http://www.algebra.uni-linz.ac.at/Sonata/sonata-%{version}/sonata-%{version}.tar.gz
@@ -84,3 +86,14 @@ rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/sonata/doc/{make_doc,convert.pl}
 %files
 %doc README.sonata
 %{_gap_dir}/pkg/sonata/
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Wed Feb  6 2013 Jerry James <loganjerry@gmail.com> - 2.6-1
+- New upstream release
+- License changed from GPLv2 to GPLv2+
+
+* Mon Sep 17 2012 Jerry James <loganjerry@gmail.com> - 2.5.1-1
+- Initial RPM
