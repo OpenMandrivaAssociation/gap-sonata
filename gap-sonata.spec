@@ -5,7 +5,7 @@ Summary:        GAP package for systems of nearrings
 
 
 License:        GPLv2
-URL:            http://www.algebra.uni-linz.ac.at/Sonata/
+URL:            https://www.algebra.uni-linz.ac.at/Sonata/
 Source0:        http://www.algebra.uni-linz.ac.at/Sonata/sonata-%{version}/sonata-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  gap-devel
